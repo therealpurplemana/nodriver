@@ -101,7 +101,7 @@ class Config:
         # when using posix-ish operating system and running as root
         # you must use no_sandbox = True, which in case is corrected here
         if is_posix and is_root() and sandbox:
-            logger.info("detected root usage, autoo disabling sandbox mode")
+            logger.info("detected root usage, automatically disabling sandbox mode")
             self.sandbox = False
 
         self.autodiscover_targets = True
